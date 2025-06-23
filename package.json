@@ -6,7 +6,8 @@
   "scripts": {
     "fmt": "prettier -w src/",
     "build": "node build.js",
-    "start": "node --enable-source-maps -r ./dist/init-instrumentation.js ./dist/main.js"
+    "start": "node --enable-source-maps -r ./dist/init-instrumentation.js ./dist/main.js",
+    "repro": "docker build -t dd-trace-bug-repro . && docker run -it dd-trace-bug-repro"
   },
   "keywords": [],
   "author": "",

@@ -13,6 +13,8 @@ The Datadog Node.js tracing library has encountered several known issues related
 
 Despite Datadog's [official compatibility documentation](https://docs.datadoghq.com/tracing/trace_collection/compatibility/nodejs/) indicating support for OpenAI v5, real-world bundling scenarios reveal compatibility issues that this reproduction environment helps test and isolate.
 
+This happens despite trying to disable OpenAI tracing, as per the env variables set in the dockerfile.
+
 ## Configuration
 
 The application is configured with:

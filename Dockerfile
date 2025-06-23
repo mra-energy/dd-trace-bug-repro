@@ -26,13 +26,14 @@ ENV DD_GIT_COMMIT_SHA=
 
 ENV DD_AGENT_HOST=ecair-datadog.internal
 ENV DD_TRACE_DEBUG=true
+
 # https://github.com/DataDog/dd-trace-js/issues/4574
 # https://github.com/DataDog/dd-trace-js/pull/5793
 # https://github.com/DataDog/dd-trace-js/issues/4424
 # https://docs.datadoghq.com/tracing/trace_collection/compatibility/nodejs/
-ENV DD_TRACE_DISABLED_PLUGINS=openai,dns
-ENV DD_TRACE_DISABLED_INSTRUMENTATIONS=openai,dns
-ENV DD_TRACE_OPENAI_ENABLED=false
+# ENV DD_TRACE_DISABLED_PLUGINS=openai,dns
+# ENV DD_TRACE_DISABLED_INSTRUMENTATIONS=openai,dns
+# ENV DD_TRACE_OPENAI_ENABLED=false
 
 RUN addgroup -g 1001 -S nodejs
 RUN adduser -S zinedine_zidane -u 1001
