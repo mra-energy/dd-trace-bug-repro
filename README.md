@@ -60,9 +60,131 @@ Key Datadog configuration:
 The following error occurs when the OpenAI package is bundled with Datadog tracing:
 
 ```
+Error: esbuild-wrapped openai missing in list of hooks
+    at payload (/node_modules/dd-trace/packages/datadog-instrumentations/src/helpers/bundler-register.js:33:9)
+    at Channel.publish (node:diagnostics_channel:150:9)
+    at dc (/node_modules/openai/src/resources/chat/completions/completions.ts:1719:24)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/resources/chat/chat.ts:5:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/resources/chat/index.ts:3:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/resources/index.ts:3:1)
+    at /app/main.js:1:209
+Error: esbuild-wrapped openai missing in list of hooks
+    at payload (/node_modules/dd-trace/packages/datadog-instrumentations/src/helpers/bundler-register.js:33:9)
+    at Channel.publish (node:diagnostics_channel:150:9)
+    at Speech (/node_modules/openai/src/resources/audio/transcriptions.ts:12:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/resources/audio/audio.ts:6:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/resources/index.ts:5:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/client.ts:20:1)
+    at /app/main.js:1:209
+Error: esbuild-wrapped openai missing in list of hooks
+    at payload (/node_modules/dd-trace/packages/datadog-instrumentations/src/helpers/bundler-register.js:33:9)
+    at Channel.publish (node:diagnostics_channel:150:9)
+    at <anonymous> (/node_modules/openai/src/resources/audio/translations.ts:11:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/resources/audio/audio.ts:22:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/resources/index.ts:5:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/client.ts:20:1)
+    at /app/main.js:1:209
+Error: esbuild-wrapped openai missing in list of hooks
+    at payload (/node_modules/dd-trace/packages/datadog-instrumentations/src/helpers/bundler-register.js:33:9)
+    at Channel.publish (node:diagnostics_channel:150:9)
+    at <anonymous> (/node_modules/openai/src/resources/completions.ts:10:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/resources/index.ts:16:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/client.ts:20:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/index.ts:6:10)
+    at <anonymous> (/node_modules/openai/src/index.ts:25:21)
+Error: esbuild-wrapped openai missing in list of hooks
+    at payload (/node_modules/dd-trace/packages/datadog-instrumentations/src/helpers/bundler-register.js:33:9)
+    at Channel.publish (node:diagnostics_channel:150:9)
+    at <anonymous> (/node_modules/openai/src/resources/embeddings.ts:8:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/resources/index.ts:34:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/client.ts:20:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/index.ts:6:10)
+    at <anonymous> (/node_modules/openai/src/index.ts:25:21)
+Error: esbuild-wrapped openai missing in list of hooks
+    at payload (/node_modules/dd-trace/packages/datadog-instrumentations/src/helpers/bundler-register.js:33:9)
+    at Channel.publish (node:diagnostics_channel:150:9)
+    at <anonymous> (/node_modules/openai/src/resources/files.ts:14:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/resources/index.ts:55:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/client.ts:20:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/index.ts:6:10)
+    at <anonymous> (/node_modules/openai/src/index.ts:25:21)
+Error: esbuild-wrapped openai missing in list of hooks
+    at payload (/node_modules/dd-trace/packages/datadog-instrumentations/src/helpers/bundler-register.js:33:9)
+    at Channel.publish (node:diagnostics_channel:150:9)
+    at Checkpoints (/node_modules/openai/src/resources/fine-tuning/jobs/jobs.ts:632:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/resources/fine-tuning/fine-tuning.ts:18:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/resources/index.ts:65:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/client.ts:20:1)
+    at /app/main.js:1:209
+Error: esbuild-wrapped openai missing in list of hooks
+    at payload (/node_modules/dd-trace/packages/datadog-instrumentations/src/helpers/bundler-register.js:33:9)
+    at Channel.publish (node:diagnostics_channel:150:9)
+    at <anonymous> (/node_modules/openai/src/resources/images.ts:9:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/resources/index.ts:67:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/client.ts:20:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/index.ts:6:10)
+    at <anonymous> (/node_modules/openai/src/index.ts:25:21)
+Error: esbuild-wrapped openai missing in list of hooks
+    at payload (/node_modules/dd-trace/packages/datadog-instrumentations/src/helpers/bundler-register.js:33:9)
+    at Channel.publish (node:diagnostics_channel:150:9)
+    at <anonymous> (/node_modules/openai/src/resources/models.ts:9:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/resources/index.ts:76:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/client.ts:20:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/index.ts:6:10)
+    at <anonymous> (/node_modules/openai/src/index.ts:25:21)
+Error: esbuild-wrapped openai missing in list of hooks
+    at payload (/node_modules/dd-trace/packages/datadog-instrumentations/src/helpers/bundler-register.js:33:9)
+    at Channel.publish (node:diagnostics_channel:150:9)
+    at <anonymous> (/node_modules/openai/src/resources/moderations.ts:7:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/resources/index.ts:77:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/client.ts:20:1)
+    at /app/main.js:1:209
+    at <anonymous> (/node_modules/openai/src/index.ts:6:10)
+    at <anonymous> (/node_modules/openai/src/index.ts:25:21)
+Error: esbuild-wrapped openai missing in list of hooks
+    at payload (/node_modules/dd-trace/packages/datadog-instrumentations/src/helpers/bundler-register.js:33:9)
+    at Channel.publish (node:diagnostics_channel:150:9)
+    at <anonymous> (/node_modules/openai/src/index.ts:25:21)
+    at /app/main.js:1:209
+    at Object.<anonymous> (/src/index.ts:1:20)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
 /node_modules/dd-trace/packages/datadog-instrumentations/src/helpers/bundler-register.js:31
     hooks[payload.package]()
                          ^
+
 
 TypeError: bPt[t.package] is not a function
     at payload (/node_modules/dd-trace/packages/datadog-instrumentations/src/helpers/bundler-register.js:31:26)
@@ -75,4 +197,7 @@ TypeError: bPt[t.package] is not a function
     at /app/main.js:1:209
     at <anonymous> (/node_modules/openai/src/resources/index.ts:3:1)
     at /app/main.js:1:209
+
+Node.js v22.16.0
+ ELIFECYCLE  Command failed with exit code 1.
 ```
