@@ -43,9 +43,9 @@ The application runs a simple Express server on port 3000 with basic tracing ins
 ## Environment Variables
 
 Key Datadog configuration:
-- `DD_TRACE_DISABLED_PLUGINS=openai,dns` - Disables problematic plugins
-- `DD_TRACE_DISABLED_INSTRUMENTATIONS=openai,dns` - Disables instrumentations
-- `DD_TRACE_OPENAI_ENABLED=false` - Explicitly disables OpenAI tracing
+- `DD_TRACE_DISABLED_PLUGINS=openai` - Disables problematic plugins (doesn't work)
+- `DD_TRACE_DISABLED_INSTRUMENTATIONS=openai` - Disables instrumentations (doesn't work)
+- `DD_TRACE_OPENAI_ENABLED=false` - Explicitly disables OpenAI tracing (undocumented but found in plugin_manager.js - doesnt work anyway)
 - `DD_TRACE_DEBUG=true` - Enables debug logging
 
 ## Files
