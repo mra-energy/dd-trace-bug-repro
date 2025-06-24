@@ -3,6 +3,8 @@
 
 This repository demonstrates and reproduces specific issues with the Datadog tracing library (`dd-trace-js`) in Node.js applications. The project is configured to help isolate and test various tracing-related problems, particularly those involving OpenAI instrumentation conflicts and module resolution issues.
 
+https://github.com/DataDog/dd-trace-js/issues/5925#issuecomment-2997220385
+
 ## Background
 
 The Datadog Node.js tracing library has encountered several known issues related to OpenAI integration and module bundling:
